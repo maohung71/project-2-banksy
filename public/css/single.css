@@ -1,0 +1,154 @@
+
+.singleswrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background:rgba(255,255,255, 0.8);
+  width: 100%;
+  min-height: 650px;
+  margin: 0 auto;
+}
+.singlelists{
+  padding: 5em 6em 0 6em;
+  width: 35%;
+}
+
+.singlelists > h2{
+  /*border: 1px solid blue;*/
+  padding: .1em;
+}
+
+.singlelists > p{
+  font-family: oswald;
+  font-weight: 400;
+  border-top: 1px solid grey;
+  padding: 1em .5em;
+  margin-top: 1em;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.photowrapper{
+  display: inline-block;
+  max-width: 40%;
+  padding: 5em 0 6em 6em;
+  margin: 0 auto;
+
+}
+
+
+.singlelists > .description{
+  height: 140px;
+}
+
+.photowrapper img{
+  max-width: 100%;
+}
+
+
+
+/*forms*/
+form{
+  display: inline-block;
+
+}
+
+.formwrapper{
+  background:rgba(255,255,255, 0.2);
+  width: 100%;
+  text-align: center;
+}
+
+.formwrapper > form{
+  background: url("../images/inkwhite.png") no-repeat top center;
+  background-size: 110%;
+  display: inline-block;
+  margin: 1em auto 3em;
+  padding: 2em 1em 1em;
+}
+
+form label{
+  font-family: Merriweather;
+  font-size: 1.6em;
+  color: red;
+  letter-spacing: 2px;
+  line-height: 3em;
+}
+
+input [type=button], input[type=text], input[type=reset]{
+  font-size: 1.2em;
+  width: 75%;
+  padding: .3em 0 .3em .5em;
+  margin: .3em auto;
+  border: 1px solid lightgrey;
+}
+
+/*submit button*/
+.formsubmit {
+  font-family: oswald;
+  font-weight: 500;
+  color: white;
+  background-color: red;
+  border: none;
+  text-decoration: none;
+  margin: 1.2em .5em;
+  cursor: pointer;
+  font-size: 1.2em;
+  text-align: center;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  letter-spacing: 2px;
+}
+
+
+/*input desciption*/
+.textdesc {
+  width: 75%;
+  font-size: 1.2em;
+  border: 1px solid lightgrey;
+  padding: .5em 0 .5em .5em;
+  height: 100px;
+  display: block;
+  margin: .5em auto;
+  }
+
+.fa-chevron-circle-left, .fa-chevron-circle-right{
+  color: red;
+  padding: .5em .5em;
+  margin: .2em  0 0 1.4em;
+}
+
+.fa-chevron-circle-left:hover, .fa-chevron-circle-right:hover {
+  color: #125a70;
+}
+
+
+/*button*/
+
+
+.button, .indexsubmit{
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+  margin: 1.2em .5em;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-family: oswald;
+  letter-spacing: 1px;
+}
+
+
+.allbutton > a:hover, form .indexsubmit:hover {
+  background-color: red;
+  border: 0px;
+}
+
+form :hover[type=text]{
+  border: 1px solid grey;
+}
+
+

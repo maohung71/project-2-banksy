@@ -1,0 +1,13 @@
+<% include ../partials/boilerplate %>
+
+<section class="formwrapper">
+  <form method='POST' action='/index/<%= data.id %>?_method=PUT'>
+    <label for='description'> Add Comment to <br><%= data.title %></label></br>
+    <input name='title' type='text' value='<%= data.title %>' />
+    <input name='location' type='text' value='<%= data.location %>' />
+    <textarea class='textdesc' name='description' type='text' placeholder='description' values='description'></textarea>
+    <input class='formsubmit' type='submit' value='Comment!' />
+  </form>
+</section>
+
+<% include ../partials/footer %>

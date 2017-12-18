@@ -1,0 +1,16 @@
+<% include ../partials/boilerplate %>
+
+<div class="formwrapper">
+  <form method='POST' action='/index'>
+    <label for='description'> Add To List </label></br>
+    <input name='title' type='text' placeholder='title' />
+    <input name='location' type='text' placeholder='location' />
+    <input name='day' type='text' placeholder='date' />
+    <textarea class='textdesc' name='description' type='text' placeholder='description' values='description'></textarea>
+    <input class='formsubmit' type='submit' value='Submit!' />
+  </form>
+</div>
+
+<% include ../partials/footer %>
+
+

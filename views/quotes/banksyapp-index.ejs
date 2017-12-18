@@ -1,0 +1,27 @@
+<% include ../partials/boilerplate %>
+
+  <section class="indexwrapper" id="indexwrapper">
+   <% for(let banksy of data) { %>
+      <div class = "listitems">
+        <h2 class = "title"><span>Day <%= banksy.id %>.</span> <%= banksy.title %></h2>
+        <h2 class = "day"><%= banksy.day %></h2>
+        <h2 class = "location"><%= banksy.location %></h2>
+        </br>
+      <div class="allbutton">
+        <a class="button" href='/index/<%= banksy.id %>'>Info</a>
+        <a class="button" href='/index/<%= banksy.id %>/edit'>Edit</a>
+        <form action="/index/<%= banksy.id %>?_method=Delete " method="Post">
+          <input class="indexsubmit" type="Submit" value="Delete"/>
+        </form>
+      </div>
+
+    </div>
+    <% } %>
+  </section>
+  <div class="addbutton">
+    <a href="/index/add"> New <br>Work<br>Spotted?</i></a>
+  </div>
+
+  <% include ../partials/footer %>
+
+

@@ -1,0 +1,30 @@
+<% include ../partials/boilerplate %>
+
+  <section class="singleswrapper">
+
+    <div class="photowrapper">
+      <img src="<%= data.photo %>">
+    </div>
+    <div class = "singlelists">
+      <h2 class = "title">Day <%= data.id %>. <%= data.title %></h2>
+      <h2 class = "location"><%= data.location %></h2><br>
+      <h2 class = "day"><%= data.day %></h2>
+      <p class = "description"><%= data.description %></p>
+    <div class="allbutton">
+      <a class="button" href="/index/<%= data.id %>/edit"> Edit Day <%= data.id %> </a>
+      <a class="button" href='/index'>Back to List</a>
+
+      <form action="/index/<%= data.id %>?_method=Delete" method="Post">
+        <input class="indexsubmit" type="Submit" value="Delete"/>
+      </form>
+      <br>
+    </div>
+      <a href='/index/<%= data.id -1 %>' class="previous"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
+      <a href='/index/<%= data.id + 1 %>' class="next"><i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></a>
+    </div>
+
+  </section>
+
+<% include ../partials/footer %>
+
+
